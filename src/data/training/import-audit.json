@@ -1,0 +1,153 @@
+{
+  "upstream": "https://github.com/Iamsdt/chess",
+  "puzzles": 20,
+  "openings": 54,
+  "endgames": 16,
+  "rejected": [
+    {
+      "kind": "puzzle",
+      "id": "e05",
+      "reason": "Error: Advertised mating solution does not give checkmate"
+    },
+    {
+      "kind": "puzzle",
+      "id": "e06",
+      "reason": "Error: Advertised mating solution does not give checkmate"
+    },
+    {
+      "kind": "puzzle",
+      "id": "e09",
+      "reason": "Error: The side that just moved left its king in check"
+    },
+    {
+      "kind": "puzzle",
+      "id": "e10",
+      "reason": "Error: Invalid move: {\"from\":\"f8\",\"to\":\"f1\"}"
+    },
+    {
+      "kind": "puzzle",
+      "id": "e13",
+      "reason": "Error: Invalid move: {\"from\":\"e2\",\"to\":\"b5\"}"
+    },
+    {
+      "kind": "puzzle",
+      "id": "e14",
+      "reason": "Error: Invalid move: {\"from\":\"c1\",\"to\":\"d2\"}"
+    },
+    {
+      "kind": "puzzle",
+      "id": "m04",
+      "reason": "Error: Invalid move: {\"from\":\"f4\",\"to\":\"b8\"}"
+    },
+    {
+      "kind": "puzzle",
+      "id": "m05",
+      "reason": "Error: Invalid move: {\"from\":\"d1\",\"to\":\"d5\"}"
+    },
+    {
+      "kind": "puzzle",
+      "id": "m07",
+      "reason": "Error: Advertised mating solution does not give checkmate"
+    },
+    {
+      "kind": "puzzle",
+      "id": "m10",
+      "reason": "Error: Advertised mating solution does not give checkmate"
+    },
+    {
+      "kind": "puzzle",
+      "id": "m15",
+      "reason": "Error: Advertised mating solution does not give checkmate"
+    },
+    {
+      "kind": "puzzle",
+      "id": "m16",
+      "reason": "Error: Invalid move: {\"from\":\"d6\",\"to\":\"e4\"}"
+    },
+    {
+      "kind": "puzzle",
+      "id": "m17",
+      "reason": "Error: Invalid move: {\"from\":\"e6\",\"to\":\"e8\"}"
+    },
+    {
+      "kind": "puzzle",
+      "id": "m19",
+      "reason": "Error: Invalid move: {\"from\":\"d6\",\"to\":\"e4\"}"
+    },
+    {
+      "kind": "puzzle",
+      "id": "m20",
+      "reason": "Error: Invalid move: {\"from\":\"c2\",\"to\":\"c7\"}"
+    },
+    {
+      "kind": "puzzle",
+      "id": "h02",
+      "reason": "Error: Invalid move: {\"from\":\"g8\",\"to\":\"f6\"}"
+    },
+    {
+      "kind": "puzzle",
+      "id": "h03",
+      "reason": "Error: Invalid move: {\"from\":\"e7\",\"to\":\"h7\"}"
+    },
+    {
+      "kind": "puzzle",
+      "id": "h04",
+      "reason": "Error: Invalid move: {\"from\":\"d1\",\"to\":\"d8\"}"
+    },
+    {
+      "kind": "puzzle",
+      "id": "h05",
+      "reason": "Error: Advertised mating solution does not give checkmate"
+    },
+    {
+      "kind": "puzzle",
+      "id": "h06",
+      "reason": "Error: Invalid move: {\"from\":\"b3\",\"to\":\"f7\"}"
+    },
+    {
+      "kind": "puzzle",
+      "id": "h07",
+      "reason": "Error: Invalid move: {\"from\":\"g8\",\"to\":\"h7\"}"
+    },
+    {
+      "kind": "puzzle",
+      "id": "h08",
+      "reason": "Error: Solution continues after game over"
+    },
+    {
+      "kind": "puzzle",
+      "id": "h09",
+      "reason": "Error: Advertised mating solution does not give checkmate"
+    },
+    {
+      "kind": "puzzle",
+      "id": "h10",
+      "reason": "Error: Advertised promotion line never promotes"
+    },
+    {
+      "kind": "endgame",
+      "id": "kqk-2",
+      "reason": "Error: The side that just moved left its king in check"
+    },
+    {
+      "kind": "endgame",
+      "id": "kbk-1",
+      "reason": "Error: Position is already terminal"
+    },
+    {
+      "kind": "endgame",
+      "id": "wrong-bishop",
+      "reason": "Error: Position is already terminal"
+    },
+    {
+      "kind": "endgame",
+      "id": "qvsp-1",
+      "reason": "Error: The side that just moved left its king in check"
+    },
+    {
+      "kind": "endgame",
+      "id": "qvsp-2",
+      "reason": "Error: The side that just moved left its king in check"
+    }
+  ]
+}

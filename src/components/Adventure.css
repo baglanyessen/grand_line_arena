@@ -1,0 +1,56 @@
+﻿/* A sunny pirate adventure: ocean blue, sailcloth, straw gold and red ink. */
+.adventure-theme {
+  --adventure-ink: #173d57;
+  --adventure-red: #ce3b30;
+  --adventure-paper: #fff3d7;
+  color: var(--adventure-ink);
+  background-color: #f7edce;
+  background-image: radial-gradient(#b9946030 .7px, transparent .7px);
+  background-size: 7px 7px;
+}
+.adventure-theme .main-sidebar { background: #155c83; border-right: 4px solid #103f5c; color: #fff2ce; }
+.adventure-theme .brand { color: #fff3ce; font-family: var(--font-pirate); font-size: 24px; letter-spacing: .5px; padding: 0; gap: 8px; }
+.adventure-theme .brand-icon { width: 48px; height: 48px; border: 0; background: #fff0c5; border-radius: 50%; box-shadow: 2px 3px 0 #103f5c; padding: 3px; transform: rotate(-8deg); }
+.adventure-theme .brand-subtitle { color: #c1e7ec; font-size: 8px; letter-spacing: 2px; }
+.adventure-theme .nav-caption { color: #a7d3e1; }
+.adventure-theme .nav-item { color: #e5f1ee; border-radius: 4px; font-weight: 600; }
+.adventure-theme .nav-item:hover { background: #1d729b; }
+.adventure-theme .nav-item.active { background: #f6ce6e; color: #173d57; border: 2px solid #173d57; box-shadow: 3px 3px 0 #0a3d5a; transform: rotate(-1deg); }
+.adventure-theme .nav-dot { background: #cf4035; }
+.adventure-theme .sidebar-account, .adventure-theme .sidebar-signin { border-color: #81bbcd6b; color: #f9e9bd; }
+.adventure-theme .sidebar-account small, .adventure-theme .sidebar-account button { color: #c0e4eb; }
+.adventure-theme .account-avatar { background: #f2c367; color: #173d57; border: 2px solid #173d57; }
+.adventure-theme .page-heading h1 { font-family: var(--font-game); font-size: 40px; letter-spacing: 1px; }
+.adventure-theme .ships-log { background: #fff9e9; border: 2px solid #c6a477; box-shadow: 2px 3px 0 #d5bc91; }
+.adventure-theme .crew-page h2.font-pirate { font-family: var(--font-game); font-size: 42px; letter-spacing: 1px; }
+
+@media (max-width: 1100px) {
+  .adventure-theme .brand { font-size: 19px; }
+  .adventure-theme .brand-icon { width: 37px; height: 37px; }
+  .adventure-theme .brand-subtitle { font-size: 6px; letter-spacing: 1.4px; }
+}
+@media (max-width: 760px) {
+  .adventure-theme .main-sidebar { border-right: 0; border-bottom: 4px solid #103f5c; padding: 17px 18px 13px; }
+  .adventure-theme .brand { font-size: 22px; }
+  .adventure-theme .brand-icon { width: 38px; height: 38px; }
+  .adventure-theme .brand-subtitle { font-size: 6px; letter-spacing: 1.5px; }
+  .adventure-theme .nav-item.active { border-width: 1px; box-shadow: 2px 2px 0 #0a3d5a; }
+}
+
+/* Keep the account panel inside the sidebar, including on short viewports. */
+.adventure-theme .main-sidebar { overflow-y: auto; }
+.adventure-theme .sidebar-bottom { flex-shrink: 0; min-width: 0; padding-top: 24px; }
+.adventure-theme .sidebar-account {
+  width: 100%; min-width: 0; padding: 12px 10px; gap: 9px;
+  border: 1px solid #4383a2; border-radius: 10px;
+  background: #104766; color: #fff3ce;
+}
+.adventure-theme .sidebar-account strong { color: #fff3ce; white-space: nowrap; }
+.adventure-theme .sidebar-account small { color: #c0e4eb; overflow-wrap: anywhere; }
+.adventure-theme .sidebar-account button { flex-shrink: 0; border-radius: 6px; }
+.adventure-theme .sidebar-account button:hover { background: #266681; color: #fff3ce; }
+@media (max-width: 760px) {
+  .adventure-theme .main-sidebar { overflow-y: visible; grid-template-columns: minmax(0, 1fr) auto; }
+  .adventure-theme .sidebar-bottom { padding-top: 0; max-width: 160px; }
+  .adventure-theme .sidebar-account { padding: 8px; gap: 5px; }
+}

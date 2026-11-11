@@ -1,0 +1,41 @@
+{
+  "name": "grand-line-arena-server",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test:auth": "bun test src/ws/chess-auth.test.ts",
+    "test": "bun test src/ws src/db src/bot",
+    "test:postgres": "bun run scripts/test-postgres.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:migrate:bounty": "bun run scripts/migrate-bounty.ts",
+    "db:migrate:crews": "bun run scripts/migrate-crews.ts",
+    "db:migrate:crew-archive": "bun run scripts/migrate-crew-archive.ts",
+    "db:migrate:war-rosters": "bun run scripts/migrate-war-rosters.ts",
+    "db:migrate:war-settlement": "bun run scripts/migrate-war-settlement.ts",
+    "db:migrate:war-deadlines": "bun run scripts/migrate-war-deadlines.ts",
+    "db:migrate:active-games": "bun run scripts/migrate-active-games.ts",
+    "db:migrate:leadership": "bun run scripts/migrate-leadership.ts"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "drizzle-kit": "^0.31.10"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "@elysiajs/bearer": "^1.4.4",
+    "@elysiajs/cors": "^1.4.2",
+    "@elysiajs/jwt": "^1.4.2",
+    "chess.js": "^1.4.0",
+    "drizzle-orm": "^0.45.2",
+    "elysia": "^1.4.30",
+    "postgres": "^3.4.9"
+  }
+}

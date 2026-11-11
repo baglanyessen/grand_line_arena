@@ -1,0 +1,28 @@
+{
+  "name": "the_chess_piece",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test:browser": "bun run server/scripts/browser-acceptance.ts",
+    "test": "node --test src/lib/chessState.test.js src/lib/chessClock.test.js src/lib/bounty.test.js src/lib/gameReplay.test.js src/lib/training.test.js",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "playwright": "^1.65.0",
+    "vite": "^8.2.0"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.0.5",
+    "chess.js": "^1.4.0",
+    "lucide-react": "^1.30.0",
+    "react": "^19.2.8",
+    "react-chessboard": "^5.12.0",
+    "react-dom": "^19.2.8",
+    "tailwindcss": "^4.3.3",
+    "stockfish": "^19.0.1"
+  }
+}
